@@ -3,14 +3,10 @@ import os
 import pyfiglet
 
 os.system('cls' if os.name == 'nt' else 'clear')
-danh_sach_tu = [
-  "carrot", "cherries", "cucumber", "mushroom", "tomatoes", "apple", "corn",
-  "grapes"
-]
+danh_sach_tu = ["kiwi", "mango", "pineapple", "peach", "papaya", "avocado", "watermelon", "grapefruit", "passionfruit", "dragonfruit", "pomegranate", "guava", "lychee", "jackfruit", "orange", "strawberry", "apple"]
 banner = pyfiglet.figlet_format("hangman")
 print(banner)
-print("                                        #made by Đàm Đức Huy\n"
-      )  # made with python
+print("                                        #made by Đàm Đức Huy\n")  # hello
 print("Welcome to Hangman! Let's see if you can guess this word!\n")
 
 random_tu = random.choice(danh_sach_tu)

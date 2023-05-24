@@ -32,7 +32,7 @@ def get_hangman_stage(mang):
   max_attempts = 7
   stages = [
     """
-        |
+        ------
         |
         |
         |
@@ -112,6 +112,7 @@ print(get_hangman_stage(7))
 while ('_' in space2) and (mang > 0):
   # print("see if there is an error: ", random_tu)
   chon = input("\nGuess a letter: ")
+  chon = chon.lower()
   os.system('cls' if os.name == 'nt' else 'clear')
 
   for i, kytu in enumerate(random_tu):

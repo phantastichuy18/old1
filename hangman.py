@@ -3,10 +3,15 @@ import os
 import pyfiglet
 
 os.system('cls' if os.name == 'nt' else 'clear')
-danh_sach_tu = ["kiwi", "mango", "pineapple", "peach", "papaya", "avocado", "watermelon", "grapefruit", "passionfruit", "dragonfruit", "pomegranate", "guava", "lychee", "jackfruit", "orange", "strawberry", "apple"]
+danh_sach_tu = [
+  "kiwi", "mango", "pineapple", "peach", "papaya", "avocado", "watermelon",
+  "grapefruit", "passionfruit", "dragonfruit", "pomegranate", "guava",
+  "lychee", "jackfruit", "orange", "strawberry", "apple"
+]
 banner = pyfiglet.figlet_format("hangman")
 print(banner)
-print("                                        #made by Đàm Đức Huy\n")  # hello
+print(
+  "                                        #made by Đàm Đức Huy\n")  # hello
 print("Welcome to Hangman! Let's see if you can guess this word!\n")
 
 random_tu = random.choice(danh_sach_tu)
@@ -103,6 +108,7 @@ def get_hangman_stage(mang):
   return stages[max_attempts - mang]
 
 
+print(get_hangman_stage(7))
 while ('_' in space2) and (mang > 0):
   # print("see if there is an error: ", random_tu)
   chon = input("\nGuess a letter: ")

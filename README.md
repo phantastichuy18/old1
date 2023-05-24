@@ -2,7 +2,7 @@
 This is a HANGMAN game made with Python but the person making it is a python novice (1 week)
 (I'm stupid)
 
-How to play:
+How to play(Linux)(I don't know about Windows):
 
 1. Open terminal
 2. Install the `git` package if you haven't already

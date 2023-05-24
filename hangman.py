@@ -113,7 +113,6 @@ while ('_' in space2) and (mang > 0):
   # print("see if there is an error: ", random_tu)
   chon = input("\nGuess a letter: ")
   os.system('cls' if os.name == 'nt' else 'clear')
-  ketqua = ''
 
   for i, kytu in enumerate(random_tu):
     if chon == kytu:

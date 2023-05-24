@@ -11,7 +11,7 @@ danh_sach_tu = [
 ]
 banner = pyfiglet.figlet_format("hangman")
 print(banner)
-print("                                        #made by Đàm Đức Huy\n")  # hello
+print("                                        #made with python\n")  # hello
 print("Welcome to Hangman! Let's see if you can guess this word!\n")
 
 random_tu = random.choice(danh_sach_tu)
@@ -119,7 +119,7 @@ while ('_' in space2) and (mang > 0):
     if chon == kytu:
       space2[i] = kytu
   print(banner)
-  print("                                        #made by Đàm Đức Huy\n")
+  print("                                        #made with python\n")
   print(' '.join(space2))
 
   if chon in random_tu:

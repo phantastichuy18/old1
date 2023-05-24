@@ -25,7 +25,7 @@ for i in range(sokytu):
 
 print("Your remaining lives:", mang, "!\n")
 print("Your word is...")
-print(space2)
+print(' '.join(space2))
 
 
 def get_hangman_stage(mang):

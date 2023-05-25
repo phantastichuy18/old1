@@ -22,7 +22,7 @@ if random_tu == "?inidhelp":
   )
   print("How to play?")
   print(
-    "Player 1 is the creator of the secret word and the number of lives for player 2 to guess.\nThis is the upgraded version."
+    "Player 1 is the creator of the secret word for player 2 to guess.\nThis is the upgraded version."
   )
   quit()
 

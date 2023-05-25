@@ -11,3 +11,5 @@ How to play(Linux)(I don't know about Windows):
 4. Run this .py file through the command `python3 name.py`
 (change the name to the appropriate file name)
 Thanks for playing!:D
+
+h6ngmaN2p is a 2 player version, one gives the word and the other guesses!

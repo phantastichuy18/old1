@@ -18,7 +18,7 @@ if random_tu == "?inidhelp":
   print("                                        #made with Python\n")
   print("About information:")
   print(
-    "\n  - Made by me Dam Duc Huy on May 25, 2023.\n  - This is just a learning project of mine!\nThis is an upgraded version of the normal 2 player hangman game.\n"
+    "\n  - Made by me Dam Duc Huy on May 25, 2023.\n  - This is just a learning project of mine!\nThis is an upgraded version of the normal hangman game.\n"
   )
   print("How to play?")
   print(

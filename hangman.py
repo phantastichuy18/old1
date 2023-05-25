@@ -23,7 +23,7 @@ space2 = []
 for i in range(sokytu):
   space2.append('_')
 
-print("Your remaining lives:", mang, "!\n")
+print("You have", mang, "incorrect guesses left.", "\n")
 print("Your word is...")
 print(' '.join(space2))
 
@@ -127,7 +127,7 @@ while ('_' in space2) and (mang > 0):
   else:
     mang -= 1
     print("\nNo! The letter is not part of the secret word")
-  print("\nYour remaining lives:", mang, "!")
+  print("\nYou have", mang, "incorrect guesses left.")
   print(get_hangman_stage(mang))
 
 if mang == 0:

@@ -1,31 +1,5 @@
 import random
 import os
-import pyfiglet
-
-os.system('cls' if os.name == 'nt' else 'clear')
-danh_sach_tu = [
-  "kiwi", "mango", "pineapple", "peach", "papaya", "avocado", "watermelon",
-  "grapefruit", "passionfruit", "dragonfruit", "pomegranate", "guava",
-  "lychee", "jackfruit", "orange", "strawberry", "apple", "monkey", "dog",
-  "cat", "mouse", "keyboard", "letter", "news", "letter", "parrot"
-]
-banner = pyfiglet.figlet_format("hangman")
-print(banner)
-print("                                        #made with python\n")  # hello
-print("Welcome to Hangman! Let's see if you can guess this word!\n")
-
-random_tu = random.choice(danh_sach_tu)
-
-sokytu = len(random_tu)
-mang = 7
-space2 = []
-
-for i in range(sokytu):
-  space2.append('_')
-
-print("You have", mang, "incorrect guesses left.", "\n")
-print("Your word is...")
-print(' '.join(space2))
 
 
 def get_hangman_stage(mang):
@@ -108,29 +82,89 @@ def get_hangman_stage(mang):
   return stages[max_attempts - mang]
 
 
-print(get_hangman_stage(7))
-while ('_' in space2) and (mang > 0):
-  # print("see if there is an error: ", random_tu)
-  chon = input("\nGuess a letter: ")
-  chon = chon.lower()
-  os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls' if os.name == 'nt' else 'clear')
+danh_sach_tu = [
+  "kiwi", "mango", "pineapple", "peach", "papaya", "avocado", "watermelon",
+  "grapefruit", "passionfruit", "dragonfruit", "pomegranate", "guava",
+  "lychee", "jackfruit", "orange", "strawberry", "apple", "monkey", "dog",
+  "cat", "mouse", "keyboard", "letter", "news", "letter", "parrot"
+]
+random_tu = random.choice(danh_sach_tu)
 
-  for i, kytu in enumerate(random_tu):
-    if chon == kytu:
-      space2[i] = kytu
-  print(banner)
-  print("                                        #made with python\n")
+
+def banner():
+  print("""
+██╗  ██╗ █████╗ ███╗   ██╗ ██████╗ ███╗   ███╗ █████╗ ███╗   ██╗
+██║  ██║██╔══██╗████╗  ██║██╔════╝ ████╗ ████║██╔══██╗████╗  ██║
+███████║███████║██╔██╗ ██║██║  ███╗██╔████╔██║███████║██╔██╗ ██║
+██╔══██║██╔══██║██║╚██╗██║██║   ██║██║╚██╔╝██║██╔══██║██║╚██╗██║
+██║  ██║██║  ██║██║ ╚████║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║ ╚████║
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+
+""")
+  print("                                        #made with python")
+  return ""
+
+
+def batdau():
+  os.system('cls' if os.name == 'nt' else 'clear')
+  print(banner())
+  print("Welcome to Hangman! Let's see if you can guess this word!\n")
+
+  sokytu = len(random_tu)
+  mang = 7
+  space2 = []
+
+  for i in range(sokytu):
+    space2.append('_')
+
+  print("You have", mang, "incorrect guesses left.", "\n")
+  print("Your word is...")
   print(' '.join(space2))
 
-  if chon in random_tu:
-    print("\nYes! The letter is part of the secret word")
-  else:
-    mang -= 1
-    print("\nNo! The letter is not part of the secret word")
-  print("\nYou have", mang, "incorrect guesses left.")
-  print(get_hangman_stage(mang))
+  print(get_hangman_stage(7))
 
-if mang == 0:
-  print("You lost!")
-else:
-  print("You won!")
+  while ('_' in space2) and (mang > 0):
+    # print("see if there is an error: ", random_tu)
+    chon = input("\nGuess a letter: ")
+    chon = chon.lower()
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    for i, kytu in enumerate(random_tu):
+      if chon == kytu:
+        space2[i] = kytu
+    print(banner())
+    print(' '.join(space2))
+
+    if chon in random_tu:
+      print("\nYes! The letter is part of the secret word")
+    else:
+      mang -= 1
+      print("\nNo! The letter is not part of the secret word")
+    print("\nYou have", mang, "incorrect guesses left.")
+    print(get_hangman_stage(mang))
+
+  if mang == 0:
+    print("You lost!")
+    print("The secret word: ", random_tu)
+    print(end())
+  else:
+    print("You won!")
+    print(end())
+  return ""
+
+
+def end():
+  print("\nPlay again?\n")
+  while True:
+    user_input = (input("(y/N): "))
+    user_input = (user_input).lower()
+    if user_input == "y":
+      print(batdau())
+    if user_input == "n":
+      exit()
+    else:
+      print("Please re-enter! y(Yes) or N (No).")
+
+
+print(batdau())

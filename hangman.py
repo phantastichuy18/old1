@@ -1,5 +1,6 @@
 import random
 import os
+import pyfiglet
 
 
 def get_hangman_stage(mang):
@@ -93,18 +94,14 @@ random_tu = random.choice(danh_sach_tu)
 
 
 def banner():
-  print("""
-░█░░░░█▀▀▄░█▀▀▄░█▀▀▀░█▀▄▀█░█▀▀▄░█▀▀▄
-░█▀▀█░█▄▄█░█░▒█░█░▀▄░█░▀░█░█▄▄█░█░▒█
-░▀░░▀░▀░░▀░▀░░▀░▀▀▀▀░▀░░▒▀░▀░░▀░▀░░▀
-
-""")
+  print(banner)
   print("                                        #made with python")
   return ""
 
 
 def batdau():
   os.system('cls' if os.name == 'nt' else 'clear')
+  banner = pyfiglet.figlet_format("hangman")
   print(banner())
   print("Welcome to Hangman! Let's see if you can guess this word!\n")
 

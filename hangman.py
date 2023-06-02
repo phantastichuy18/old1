@@ -119,7 +119,7 @@ def batdau():
   print(get_hangman_stage(7))
 
   while ('_' in space2) and (mang > 0):
-    # print("see if there is an error: ", random_tu)
+    print("see if there is an error: ", random_tu)
     chon = input("\nGuess a letter: ")
     chon = chon.lower()
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -132,6 +132,8 @@ def batdau():
 
     if chon in random_tu:
       print("\nYes! The letter is part of the secret word")
+    elif len(chon) == 0 or len(chon) > 1:
+      print("\nPlease input only 1 letter.")
     else:
       mang -= 1
       print("\nNo! The letter is not part of the secret word")

@@ -29,8 +29,9 @@ def batdau():
     "Welcome to H6ngmaN2p! Let's see what you will type.\n\nHow to play? Enter ?inidhelp to see how to play.\n\nYou are player 1!"
   )
 
-  random_tu = input("Type secret word(can't add line spacing): ").replace(
-    " ", "")
+  random_tu = input(
+    "Type secret word(can't add line spacing and capital letters): ").replace(
+      " ", "")
   random_tu = random_tu.lower()
   if random_tu == "?inidhelp":
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -54,9 +55,16 @@ def batdau():
   print(
     "Please enter the number of incorrect guesses to give player 2 chances.\n")
 
-  mang = (input("Enter the number of incorrect guesses: "))
-  if mang.isdigit():
-    mang = int(mang)
+  while True:
+    mang = (input("Enter the number of incorrect guesses: "))
+    if mang.isnumeric():
+      mang = int(mang)
+      break
+    else:
+      print("Please re-enter! Only number.")
+  # mang = (input("Enter the number of incorrect guesses: "))
+  # if mang.isdigit():
+  #   mang = int(mang)
 
   else:
     print("Only number.")
@@ -118,6 +126,8 @@ def batdau():
 
     if chon in random_tu:
       print("\nYes! The letter is part of the secret word")
+    elif len(chon) == 0 or len(chon) > 1:
+      print("\nPlease input only 1 letter.")
     else:
       mang -= 1
       print("\nNo! The letter is not part of the secret word")

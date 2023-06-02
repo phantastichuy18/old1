@@ -54,7 +54,7 @@ def batdau():
   print(
     "Please enter the number of incorrect guesses to give player 2 chances.\n")
 
-  mang = (input("Enter Sthe number of incorrect guesses: "))
+  mang = (input("Enter the number of incorrect guesses: "))
   if mang.isdigit():
     mang = int(mang)
 

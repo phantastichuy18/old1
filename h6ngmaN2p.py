@@ -43,7 +43,7 @@ def batdau():
     print(
       "Player 1 is the creator of the secret word for player 2 to guess.\nThis is the upgraded version."
     )
-    quit()
+    print(end())
 
   sokytu = len(random_tu)
 

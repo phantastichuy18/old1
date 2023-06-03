@@ -131,12 +131,14 @@ def batdau():
     print(' '.join(space2))
 
     if chon in random_tu:
-      print("\nYes! The letter is part of the secret word")
+      print("\nYes! The letter", chon, "is part of the secret word.")
     elif len(chon) == 0 or len(chon) > 1:
       print("\nPlease input only 1 letter.")
+    elif chon != chon.isalpha():
+      print("\nOnly a - z!")
     else:
       mang -= 1
-      print("\nNo! The letter is not part of the secret word")
+      print("\nNo! The letter", chon, "is not part of the secret word.")
     print("\nYou have", mang, "incorrect guesses left.")
     print(get_hangman_stage(mang))
 

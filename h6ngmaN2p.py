@@ -98,15 +98,15 @@ def batdau():
   else:
     print("\nSuggestion : ", goiy)
   print("""
-          ------------
-          |          |
-          |       -------------------------------
-          |       | I'm not good at programming |
-          |       -------------------------------
-          |
-          |        *this is hangman stages lol*
-      ------------
-      """)
+        ------
+        |    |
+        |    O
+        |  --|--
+        |    |
+        |   / 
+        |
+    ------------
+    """)
   while ('_' in space2) and (mang > 0):
     # print("see if there is an error: ", random_tu)
     chon = input("\nGuess a letter: ")
@@ -125,22 +125,22 @@ def batdau():
       print("\nSuggestion : ", goiy)
 
     if chon in random_tu:
-      print("\nYes! The letter is part of the secret word")
+      print("\nYes! The letter",chon,"is part of the secret word.")
     elif len(chon) == 0 or len(chon) > 1:
       print("\nPlease input only 1 letter.")
     else:
       mang -= 1
-      print("\nNo! The letter is not part of the secret word")
+      print("\nNo! The letter",chon,"is not part of the secret word.")
     print("\n", "You have", mang, "incorrect guesses left.", "\n")
     print("""
-          ------------
-          |          |
-          |       -------------------------------
-          |       | I'm not good at programming |
-          |       -------------------------------
-          |
-          |        *this is hangman stages lol*
-      ------------
+        --------
+        |    |
+        |    O
+        |  --|--
+        |    |
+        |   / 
+        |
+    ------------
       """)
 
   if mang == 0:

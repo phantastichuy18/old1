@@ -132,7 +132,7 @@ def batdau():
 
     if chon in random_tu:
       print("\nYes! The letter", chon, "is part of the secret word.")
-    elif len(chon) == 0 or len(chon) > 1:
+    elif len(chon) > 1:
       print("\nPlease input only 1 letter.")
     elif chon != chon.isalpha():
       print("\nOnly a - z!")

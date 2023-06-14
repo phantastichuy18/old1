@@ -131,7 +131,7 @@ def batdau():
     print(banner())
     print(' '.join(space2))
 
-    if len(chon) == 1 and chon == chon.islower():
+    if len(chon) == 1 and chon == chon.lower():
       if chon in random_tu:
         print("\nYes! The letter", chon, "is part of the secret word.")
       else:

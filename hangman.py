@@ -84,12 +84,7 @@ def get_hangman_stage(mang):
 
 
 os.system('cls' if os.name == 'nt' else 'clear')
-danh_sach_tu = [
-  "kiwi", "mango", "pineapple", "peach", "papaya", "avocado", "watermelon",
-  "grapefruit", "passionfruit", "dragonfruit", "pomegranate", "guava",
-  "lychee", "jackfruit", "orange", "strawberry", "apple", "monkey", "dog",
-  "cat", "mouse", "keyboard", "letter", "news", "letter", "parrot"
-]
+danh_sach_tu = ["kiwi", "mango", "pineapple", "peach", "papaya", "avocado", "watermelon", "grapefruit", "passionfruit", "dragonfruit", "pomegranate", "guava", "lychee", "jackfruit", "orange", "strawberry", "apple", "banana", "grape", "pear", "lemon", "lime", "melon", "coconut", "cherry", "plum", "blueberry", "raspberry",  "blackberry"]
 random_tu = random.choice(danh_sach_tu)
 
 
@@ -130,15 +125,17 @@ def batdau():
     print(banner())
     print(' '.join(space2))
 
-    if chon in random_tu:
-      print("\nYes! The letter", chon, "is part of the secret word.")
-    elif len(chon) > 1:
-      print("\nPlease input only 1 letter.")
-    elif chon != chon.isalpha():
-      print("\nOnly a - z!")
+    if chon == chon.isalpha():
+      if len(chon) == 1:
+        if chon in random_tu:
+          print("\nYes! The letter", chon, "is part of the secret word.")
+        else:
+          mang -= 1
+          print("\nNo! The letter", chon, "is not part of the secret word.")
+      else:
+          print("\nPlease input only 1 letter.")
     else:
-      mang -= 1
-      print("\nNo! The letter", chon, "is not part of the secret word.")
+      print("\nOnly a - z!")
     print("\nYou have", mang, "incorrect guesses left.")
     print(get_hangman_stage(mang))
 

@@ -1,6 +1,5 @@
 import random
 import os
-import pyfiglet
 
 
 def sieunhangao():
@@ -95,8 +94,13 @@ def sieunhangao():
   random_tu = random.choice(danh_sach_tu)
 
   def banner():
-    banner = pyfiglet.figlet_format("hangman")
-    print(banner)
+    print("""
+ _                 __ _                    
+| |_   __ _  _ _  / _` | _ __   __ _  _ _  
+|   \ / _` || ' \ \__. || '  \ / _` || ' \ 
+|_||_|\__/_||_||_||___/ |_|_|_|\__/_||_||_|
+
+""")
     print("                                        # made with python")
     return ""
 

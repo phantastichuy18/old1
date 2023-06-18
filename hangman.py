@@ -123,7 +123,7 @@ def sieunhangao():
     print(get_hangman_stage(7))
 
     while ('_' in space2) and (mang > 0):
-      # print("see if there is an error: ", random_tu)
+      print("see if there is an error: ", random_tu)
       chon = input("\nGuess a letter: ")
       chon = chon.lower()
       os.system('cls' if os.name == 'nt' else 'clear')
@@ -133,16 +133,17 @@ def sieunhangao():
           space2[i] = kytu
       print(banner())
       print(' '.join(space2))
-
-      if len(chon) == 1 and chon == chon.lower():
-        if chon in random_tu:
-          print("\nYes! The letter", chon, "is part of the secret word.")
+      if chon.islower():
+        if len(chon) == 1:
+          if chon in random_tu:
+            print("\nYes! The letter", chon, "is part of the secret word.")
+          else:
+            mang -= 1
+            print("\nNo! The letter", chon, "is not part of the secret word.")
         else:
-          mang -= 1
-          print("\nNo! The letter", chon, "is not part of the secret word.")
+          print("\nPlease input 1 letter.")
       else:
         print("\nPlease input 1 letter.")
-
       print("\nYou have", mang, "incorrect guesses left.")
       print(get_hangman_stage(mang))
 

@@ -163,7 +163,8 @@ def sieunhangao():
       if user_input == "y":
         print(sieunhangao())
       if user_input == "n":
-        exit()
+        print("Goodbye:D!\n")
+        quit()
       else:
         print("Please re-enter! y(Yes) or N (No).")
 

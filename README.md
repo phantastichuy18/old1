@@ -4,9 +4,16 @@ This is a HANGMAN game made with Python but the person making it is a python nov
 
 **You need to download python and pip first!**
 
+
+
+
+
 **How to use(Linux):**
+
 Install the `git` package if you haven't already! *required*
+
 Download python via download command! *required*
+
 Get pip by running this file https://bootstrap.pypa.io/get-pip.py! *required*
 
 
@@ -17,8 +24,14 @@ Get pip by running this file https://bootstrap.pypa.io/get-pip.py! *required*
 (change the name to the appropriate file name)
 **Before running this file, download the asciimatics library with the command `pip install asciimatics` so you can run it**
 
+
+
+
+
 **How to use(Windows):**
+
 Download Python for Windows from https://www.python.org/downloads/ *required*
+
 Get pip by running this file https://bootstrap.pypa.io/get-pip.py! *required*
 
 

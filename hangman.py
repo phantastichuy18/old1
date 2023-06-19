@@ -101,7 +101,7 @@ def sieunhangao():
 |_||_|\__/_||_||_||___/ |_|_|_|\__/_||_||_|
 
 """)
-    print("                                        # made with python")
+    print("                                        # made with Python")
     return ""
 
   def batdau():

@@ -37,7 +37,7 @@ Get pip by running this file https://bootstrap.pypa.io/get-pip.py! *required*
 
 
 1. Download the .py file from here
-2. Open Windows PowerShell or Command Prompt:
+2. Open Windows PowerShell or Command Prompt
 3. Run this .py file through the command `python name.py`
 (change the name to the appropriate file name)
 

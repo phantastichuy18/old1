@@ -99,11 +99,12 @@ def sieunhangao():
 
   def banner():
     print("""
- _  _  ___  _  _   ___  __  __  ___  _  _ 
-| || |/   \| \| | / __||  \/  |/   \| \| |
-| __ || - || .  || (_ || |\/| || - || .  |
-|_||_||_|_||_|\_| \___||_|  |_||_|_||_|\_|
-
+  /\   /\    _____   ______ |\  ________   _____     _____   ______ |\ 
+ /  |_|  \  /  _  \  \     \| |/  _____/  /     \   /  _  \  \     \| |
+/         \/  /_\  \ /   |    |   \  ___ /  \ /  \ /  /_\  \ /   |    |
+\    _    /    |    \    |\   |    \_\  \    \    \    |    \    |\   |
+ \  | |  /\____|__  /____| \  /\______  /____/\_  /____|__  /____| \  /
+  \/   \/         \/        \/        \/        \/        \/        \/ 
 
 """)
     print("                                        # made with Python")
@@ -192,7 +193,8 @@ def doit(screen):
   ],
               repeat=False)
   screen.clear()
-  screen.print_at("Started...", int(screen.width / 2 - 3), int(screen.height / 2))
+  screen.print_at("Started...", int(screen.width / 2 - 3),
+                  int(screen.height / 2))
   screen.refresh()
   screen.wait_for_input(1)
 

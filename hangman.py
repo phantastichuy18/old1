@@ -193,7 +193,7 @@ def doit(screen):
   ],
               repeat=False)
   screen.clear()
-  screen.print_at("Started...", int(screen.width / 2 - 3),
+  screen.print_at("Made by Dam Duc Huy", int(screen.width / 2 - 3),
                   int(screen.height / 2))
   screen.refresh()
   screen.wait_for_input(1)

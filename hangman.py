@@ -138,6 +138,7 @@ def sieunhangao():
         if chon == kytu:
           space2[i] = kytu
       print(banner())
+      print("Welcome to Hangman! Let's see if you can guess this word!\n")
       print(' '.join(space2))
       if chon.islower():
         if len(chon) == 1:

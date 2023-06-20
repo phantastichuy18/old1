@@ -163,6 +163,16 @@ def sieunhangao():
       print(end())
     return ""
 
+  def goodbye():
+    def didit(screen):
+      screen.clear()
+      screen.print_at("Goodbye:D!", int(screen.width / 2 - 3),
+                      int(screen.height / 2))
+      screen.refresh()
+      screen.wait_for_input(1)
+    Screen.wrapper(didit)
+    return""
+    
   def end():
     print("\nPlay again?\n")
     while True:
@@ -171,6 +181,7 @@ def sieunhangao():
       if user_input == "y":
         print(sieunhangao())
       if user_input == "n":
+        print(goodbye())
         print("Goodbye:D!\n")
         quit()
       else:

@@ -23,7 +23,7 @@ Get pip by running this file https://bootstrap.pypa.io/get-pip.py! *required*
 3. Run this .py file through the command `python3 name.py`
 (change the name to the appropriate file name)
 
-**Before running this file, download the asciimatics library with the command `pip install asciimatics` so you can run it**
+**Before running this file, download the asciimatics module with the command `pip install asciimatics` so you can run it**
 
 
 
@@ -41,7 +41,7 @@ Get pip by running this file https://bootstrap.pypa.io/get-pip.py! *required*
 3. Run this .py file through the command `python name.py`
 (change the name to the appropriate file name)
 
-**Before running this file, download the asciimatics library with the command `pip install asciimatics` so you can run it**
+**Before running this file, download the asciimatics module with the command `pip install asciimatics` so you can run it**
 
 
 Thanks for playing!:D

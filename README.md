@@ -31,7 +31,7 @@ Get pip by running this file https://bootstrap.pypa.io/get-pip.py! *required*
 
 **How to use(Windows):**
 
-**If the lower way you can download the .exe file here :D**
+**If the ez way you can download the .exe file here :D**
 
 Download Python for Windows from https://www.python.org/downloads/ *required*
 

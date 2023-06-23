@@ -9,8 +9,8 @@ src: url('fonts/square.ttf') format('truetype');
 font-weight: bold;
 }
 @font-face {
-font-family: 'cartun';
-src: url('fonts/normal.ttf') format('truetype');
+font-family: 'ourland';
+src: url('fonts/ourland.ttf') format('truetype');
 font-weight: normal;
 }
 body {

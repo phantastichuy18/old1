@@ -3,6 +3,16 @@ font-family: 'spongebob';
 src: url('fonts/spongebob.ttf') format('truetype');
 font-weight: auto;
 }
+@font-face {
+font-family: 'square';
+src: url('fonts/square.ttf') format('truetype');
+font-weight: bold;
+}
+@font-face {
+font-family: 'normal';
+src: url('fonts/normal.ttf') format('truetype');
+font-weight: normal;
+}
 body {
     font-family: 'calibri';
     font-size: 16px;

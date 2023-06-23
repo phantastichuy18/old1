@@ -6,6 +6,6 @@ This is a HANGMAN game made with Python but the person making it is a python nov
 
 Main: https://damduchuy.github.io/
 
-Rickroll others: https://damduchuy.github.io/$h&Hsx956565/dark-web56
+Rickroll others: https://damduchuy.github.io/dark-web56
 
 More: https://damduchuy.github.io/

@@ -9,7 +9,7 @@ src: url('fonts/square.ttf') format('truetype');
 font-weight: bold;
 }
 @font-face {
-font-family: 'normal';
+font-family: 'cartun';
 src: url('fonts/normal.ttf') format('truetype');
 font-weight: normal;
 }

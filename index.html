@@ -13,6 +13,10 @@ color: #333;
 margin: 0;
 padding: 0;
 }
+input[type="search"] {
+  width: 400px;
+}
+
 </style>
 </head>
 <body>
@@ -21,6 +25,7 @@ padding: 0;
 </nav>
 <main>
 <p>
+
 <h1>👋Welcome!</h1>
 <h2>Information?</h2>
 This website is created by Damduchuy to share interesting projects! :D
@@ -29,6 +34,10 @@ This website is created by Damduchuy to share interesting projects! :D
 <br>
 <img src="nyancat.gif" width="380" >
 <h1>Projects</h1>
+<form action="/search" method="get">
+    <input type="search" name="q" placeholder="Search for a project...">
+    <button type="submit">Search</button>
+</form>
 <h3>Software :</h3>
 <u><h4><a style="color:#a4a717" href="hangman-with-python" >Simple Hangman Game (Python)</a></h4></u>
 <h3>Websites:</h3>

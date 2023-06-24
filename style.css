@@ -1,17 +1,15 @@
 @font-face {
 font-family: 'spongebob';
 src: url('fonts/spongebob.ttf') format('truetype');
-font-weight: auto;
 }
 @font-face {
 font-family: 'square';
 src: url('fonts/square.ttf') format('truetype');
-font-weight: bold;
 }
 @font-face {
 font-family: 'ourland';
 src: url('fonts/ourland.ttf') format('truetype');
-font-weight: normal;
+font-weight: bold;
 }
 @font-face {
 font-family: 'vanilla';

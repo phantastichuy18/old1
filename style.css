@@ -110,4 +110,6 @@ border: 1px solid #004000;
 .download-button:hover {
 background-color: #004000;
 border: 1px solid #008000;
+border-color: #008000 transparent #008000 transparent;
+box-shadow: 0 0 10px #008000;
 }

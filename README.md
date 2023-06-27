@@ -1,6 +1,6 @@
 # WEBSITE
 
-Main: https://damduchuy.github.io/
+My website (Main): https://damduchuy.github.io/
 
 Rickroll others: https://damduchuy.github.io/dark-web56
 

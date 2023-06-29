@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Damduchuy's projects🛒</title>
-<link rel="icon" href="icons/icon.png" type="image/png">
-<link rel="stylesheet" type="text/css" href="style.css">
-<style>
-h1 {
-font-family: 'ourland';
-font-size: 26px;
-color: #333;
-margin: 0;
-padding: 0;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Damduchuy's projects🛒</title>
+    <link rel="icon" href="icons/icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        h1 {
+        font-family: 'ourland';
+        font-size: 26px;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        }
+        .accordion {
+        cursor: pointer;
+        width: 13.5%;
+        text-align: left;
+        }
+
+        .accordion:before {
+        content: '\25B6';
+        float: right;
+
+        }
+
+        .active:before {
+        transform: rotate(90deg);
+        }
+
+        .panel {
+        padding: 0 13px;
+        max-height: 0;
+        overflow: hidden;
+
+        }
+
+    </style>
 </head>
 <body>
 <nav>
@@ -35,14 +58,39 @@ Why did I create this website? For fun! You can ask me anything through my Disco
 <br>
 <img src="nyancat.gif" width="380" >
 <h1>Projects</h1>
-<!-- <form action="/search" method="get">
-    <input type="search" name="q" placeholder="Search for a project...">
-    <button type="submit">Search</button>
-</form> -->
-<h3>Software :</h3>
-<u><a style="color:#a4a717" href="hangman-with-python" >Simple Hangman Game (Python)</a></u>
-<h3>Websites:</h3>
-<u><a style="color:#99162A" href="dark-web56" >Dark-Web56 (Rickroll others:D)</a></u>
+
+<h3 class="accordion"><u>Software</u></h3>
+<div class="panel">
+    <a style="color:#a4a717" href="hangman-with-python" >Simple Hangman Game (Python)</a>
+</div>
+
+
+<h3 class="accordion"><u>Websites</u></h3>
+<div class="panel">
+    <a style="color:#99162A" href="dark-web56" >Dark-Web56 (Rickroll others:D)</a>
+</div>
+
+
+<script>
+  
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+  
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+      });
+    }
+  
+  
+  </script>
 <br>
 <br>
 <b style="font-family: 'square'">Contact me:</b>

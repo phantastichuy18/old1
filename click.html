@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click Counter</title>
+    <script>
+        function updateClickCount() {
+            var clickCountElement = document.getElementById("clickCount");
+            var clickCount = parseInt(clickCountElement.innerText);
+            clickCountElement.innerText = clickCount + 1;
+        }
+    </script>
+    <style>
+        @font-face {
+        font-family: 'novamono';
+        src: url('novamono.ttf') format('truetype');
+        }
+        body {
+            font-family: novamono;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-size: 100px;
+            background-color: blue;
+            color: white;
+        }
+        div#clickCount {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body onclick="updateClickCount()">
+    <div>click</div>
+    <div id="clickCount" style="font-family: novamono;">0</div>
+</body>
+</html>

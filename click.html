@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>just click</title>
+    <title>Click Counter</title>
     <script>
         function updateClickCount() {
             var clickCountElement = document.getElementById("clickCount");
             var clickCount = parseInt(clickCountElement.innerText);
             clickCountElement.innerText = clickCount + 1;
+
+            var audio = new Audio("sounds/pop.mp3");
+            audio.play();
         }
     </script>
     <style>

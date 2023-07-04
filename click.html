@@ -3,14 +3,26 @@
 <head>
     <title>just click</title>
     <script>
-        function updateClickCount() {
-            var clickCountElement = document.getElementById("clickCount");
-            var clickCount = parseInt(clickCountElement.innerText);
-            clickCountElement.innerText = clickCount + 1;
+        var audios = document.querySelectorAll("audio");
 
-            var audio = new Audio("sounds/pop.mp3");
-            audio.preload = "auto";
-            audio.play();
+        function muteAudios() {
+          for (var i = 0; i < audios.length; i++) {
+            audios[i].muted = true;
+          }
+        }
+
+        document.addEventListener("click", function() {
+          setTimeout(muteAudios, 1000);
+        });
+
+        function updateClickCount() {
+          var clickCountElement = document.getElementById("clickCount");
+          var clickCount = parseInt(clickCountElement.innerText);
+          clickCountElement.innerText = clickCount + 1;
+
+          var audio = new Audio("sounds/pop.mp3");
+          audio.preload = "auto";
+          audio.play();
         }
     </script>
     <style>

@@ -9,6 +9,7 @@
             clickCountElement.innerText = clickCount + 1;
 
             var audio = new Audio("sounds/pop.mp3");
+            audio.preload = "auto";
             audio.play();
         }
     </script>

@@ -21,43 +21,37 @@ src: url('fonts/vanilla.otf') format('truetype');
 font-weight: normal;
 }
 body {
-    font-family: 'vanilla';
-    font-size: 16px;
-    color: #333;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 0;
+font-family: 'vanilla';
+font-size: 16px;
+color: #333;
+background-color: #f2f2f2;
+margin: 0;
+padding: 0;
 }
 header {
-    background-color: #03977e;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
+background-color: #03977e;
+color: white;
+padding: 20px;
 text-align: center;
-font-family: 'ourland';
-background-color: #333;
-color: white;
-padding: 10px;
-height: 100vh;
-position: fixed;
-top: 0;
-left: 0;
-width: 95px;
-z-index: 10;
 }
 
-nav a {
-display: block;
-padding: 10px;
-color: white;
-text-decoration: none;
+.navbar {
+display: flex;
+width: 100%;
+background-color: #252525;
 }
+        
 
-nav a:hover {
-background-color: #444;
+.navbar option {
+flex: 1;
+padding: 20px;
+text-align: center;
+background-color: #252525;
+cursor: pointer;
+}
+        
+.navbar option:hover {
+background-color: #363636;
 }
 
 main {

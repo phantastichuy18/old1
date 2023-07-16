@@ -1,23 +1,23 @@
 @font-face {
 font-family: 'novamono';
-src: url('fonts/novamono.ttf') format('truetype');
+src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/novamono.ttf') format('truetype');
 }
 @font-face {
 font-family: 'spongebob';
-src: url('fonts/spongebob.ttf') format('truetype');
+src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/spongebob.ttf') format('truetype');
 }
 @font-face {
 font-family: 'square';
-src: url('fonts/square.ttf') format('truetype');
+src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/square.ttf') format('truetype');
 }
 @font-face {
 font-family: 'ourland';
-src: url('fonts/ourland.ttf') format('truetype');
+src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/ourland.ttf') format('truetype');
 font-weight: bold;
 }
 @font-face {
 font-family: 'vanilla';
-src: url('fonts/vanilla.otf') format('truetype');
+src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/vanilla.otf') format('truetype');
 font-weight: normal;
 }
 body {

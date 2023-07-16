@@ -1,28 +1,28 @@
 @font-face {
 font-family: 'novamono';
-src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/novamono.ttf') format('truetype');
+src: url('fonts/novamono.ttf') format('truetype');
 }
 @font-face {
 font-family: 'spongebob';
-src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/spongebob.ttf') format('truetype');
+src: url('fonts/spongebob.ttf') format('truetype');
 }
 @font-face {
 font-family: 'square';
-src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/square.ttf') format('truetype');
+src: url('fonts/square.ttf') format('truetype');
 }
 @font-face {
 font-family: 'ourland';
-src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/ourland.ttf') format('truetype');
+src: url('fonts/ourland.ttf') format('truetype');
 font-weight: bold;
 }
 @font-face {
 font-family: 'vanilla';
-src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/vanilla.otf') format('truetype');
+src: url('fonts/vanilla.otf') format('truetype');
 font-weight: normal;
 }
 @font-face {
 font-family: 'minecraft';
-src: url('https://github.com/DamDucHuy/DamDucHuy.github.io/blob/main/fonts/minecraft.ttf') format('truetype');
+src: url('fonts/minecraft.ttf') format('truetype');
 }
 body {
 font-family: 'vanilla';

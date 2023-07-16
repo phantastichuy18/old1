@@ -3,6 +3,10 @@ font-family: 'novamono';
 src: url('fonts/novamono.ttf') format('truetype');
 }
 @font-face {
+font-family: 'graffiti';
+src: url('fonts/graffiti.ttf') format('truetype');
+}
+@font-face {
 font-family: 'spongebob';
 src: url('fonts/spongebob.ttf') format('truetype');
 }

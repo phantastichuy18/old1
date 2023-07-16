@@ -4,7 +4,7 @@ src: url('fonts/novamono.ttf') format('truetype');
 }
 @font-face {
 font-family: 'graffiti';
-src: url('fonts/graffiti.ttf') format('truetype');
+src: url('fonts/graffiti.otf') format('truetype');
 }
 @font-face {
 font-family: 'spongebob';

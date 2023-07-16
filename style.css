@@ -3,6 +3,10 @@ font-family: 'novamono';
 src: url('fonts/novamono.ttf') format('truetype');
 }
 @font-face {
+font-family: 'helpme';
+src: url('fonts/helpme.ttf') format('truetype');
+}
+@font-face {
 font-family: 'graffiti';
 src: url('fonts/graffiti.otf') format('truetype');
 }

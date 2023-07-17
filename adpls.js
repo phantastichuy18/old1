@@ -13,6 +13,8 @@ function adBlockCheck() {
             banner.setAttribute('class', 'alert');
             banner.style = "background: red; color: whitesmoke; width: 100%; padding: 0.8rem; font-size: 1.2rem";
             document.body.prepend(banner);
+        } else {
+            console.log("Thank you!");
         } 
     },1000)
 }

@@ -16,3 +16,5 @@ function adBlockCheck() {
         } 
     },1000)
 }
+
+adBlockCheck()

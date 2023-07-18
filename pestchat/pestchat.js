@@ -157,7 +157,6 @@ window.onload = function() {
         var chat_input_send = document.createElement('button')
         chat_input_send.setAttribute('id', 'chat_input_send')
         chat_input_send.setAttribute('disabled', true)
-        chat_input_send.innerHTML = `<i class="far fa-paper-plane"></i>`
         chat_input_send.style.width = '25px';
         chat_input_send.style.height = '45px';
   

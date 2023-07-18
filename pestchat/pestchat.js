@@ -27,7 +27,7 @@ window.onload = function() {
     // This is very IMPORTANT!! We're going to use "db" a lot.
     var db = firebase.database()
     // We're going to use oBjEcT OrIeNtEd PrOgRaMmInG. Lol
-    class MEME_CHAT{
+    class PEST_CHAT{
       // Home() is used to create the home page
       home(){
         // First clear the body before adding in
@@ -95,7 +95,7 @@ window.onload = function() {
               // Remove the join_container. So the site doesn't look weird.
               join_container.remove()
               // parent = this. But it is not the join_button
-              // It is (MEME_CHAT = this).
+              // It is (PEST_CHAT = this).
               parent.create_chat()
             }
           }else{
@@ -135,7 +135,7 @@ window.onload = function() {
       create_chat(){
         // Again! You need to have (parent = this)
         var parent = this;
-        // GET THAT MEMECHAT HEADER OUTTA HERE
+        // GET THAT PESTCHAT HEADER OUTTA HERE
         var title_container = document.getElementById('title_container')
         var title = document.getElementById('title')
         title_container.classList.add('chat_title_container')
@@ -337,7 +337,7 @@ window.onload = function() {
       }
     }
     // So we've "built" our app. Let's make it work!!
-    var app = new MEME_CHAT()
+    var app = new PEST_CHAT()
     // If we have a name stored in localStorage.
     // Then use that name. Otherwise , if not.
     // Go to home.

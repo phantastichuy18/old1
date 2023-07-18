@@ -167,16 +167,11 @@ body{
   width: 5%;
   height: 100%;
   float: left;
-  font-size: 18px;
-  background-color: gray;
-  text-align: right;
-  color: #ccc;
+  background-color: rgb(214, 16, 16);
 }
 #chat_input_send.enabled{
-  color: #ff8c00;
-  background-color: #f8961f;
+  background-color: rgb(0, 255, 64);
   cursor: pointer;
-
 }
 #chat_logout_container{
   width: 100%;

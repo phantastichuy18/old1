@@ -3,25 +3,14 @@
 window.onload = function() {
   // Import the functions you need from the SDKs you need
     const firebaseConfig = {
-
         apiKey: "AIzaSyDyvhJOnu2Qy378yhztT8fLHfknDlgqDfY",
-
         authDomain: "pestchat01.firebaseapp.com",
-
         projectId: "pestchat01",
-
         storageBucket: "pestchat01.appspot.com",
-
         messagingSenderId: "524936994130",
-
         appId: "1:524936994130:web:4d389e56ff79ad656d2e8b",
-
         measurementId: "G-YT4M3LVN91"
-
     };
-
-
-    // Initialize Firebase
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
     // This is very IMPORTANT!! We're going to use "db" a lot.
@@ -158,7 +147,7 @@ window.onload = function() {
         chat_input_send.setAttribute('id', 'chat_input_send')
         chat_input_send.setAttribute('disabled', true)
         chat_input_send.style.width = '25px';
-        chat_input_send.style.height = '45px';
+        chat_input_send.style.height = '40px';
   
         var chat_input = document.createElement('input')
         chat_input.setAttribute('id', 'chat_input')

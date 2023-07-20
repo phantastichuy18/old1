@@ -3,6 +3,10 @@ font-family: 'novamono';
 src: url('fonts/novamono.ttf') format('truetype');
 }
 @font-face {
+font-family: 'supermario';
+src: url('fonts/supermario.ttf') format('truetype');
+}
+@font-face {
 font-family: 'minecraft';
 src: url('fonts/minecraft.ttf') format('truetype');
 }

@@ -1,0 +1,17 @@
+.my_bttn{
+	height: 45px;
+	width: 45px;
+	background-color: #0f9bf9;
+	border: none;
+	color: white;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	display: none;
+}
+.my_bttn:hover{
+	transform: scale(1.05);
+}

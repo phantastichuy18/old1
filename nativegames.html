@@ -9,7 +9,7 @@
     <script async src="https://fundingchoicesmessages.google.com/i/pub-1844995367807772?ers=1" nonce="pdN4gRm3LX4Ld3ho4qhAAQ"></script><script nonce="pdN4gRm3LX4Ld3ho4qhAAQ">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Native games</title>
+    <title>Native games - DADUDUH</title>
     <link rel="icon" href="icons/icon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -78,13 +78,47 @@
     <amp-auto-ads type="adsense"
             data-ad-client="ca-pub-1844995367807772">
     </amp-auto-ads>
-    <body style="margin: 0; padding: 0;">
-        <nav class="navbar">
-            <a href="damduchuy.github.io" style="text-decoration: none; color: white"><option>Home</option></a>
-            <a href="nativegames" style="text-decoration: none; color: white"><option>Native Games</option></a>
-            <a href="mine" style="text-decoration: none; color: white"><option>Mine</option></a>
-	        <a href="contact" style="text-decoration: none; color: white"><option>Contact</option></a>
-        </nav>
+    <body>
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <img class="logotext" src="icons/logotext.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="damduchuy.github.io">Home</a>
+                        </li>
+                        <li>
+                            <a href="nativegames" class="active">Native games</a>
+                        </li>
+                        <li>
+                            <a href="mine">Mine</a>
+                        </li>
+                        <li>
+                            <a href="contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="login-signup">
+                    <a href="">Donate</a>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
     </body>
     <button class="my_bttn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
     <main>

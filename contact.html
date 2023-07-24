@@ -63,13 +63,47 @@
     <amp-auto-ads type="adsense"
             data-ad-client="ca-pub-1844995367807772">
     </amp-auto-ads>
-    <body style="margin: 0; padding: 0;">
-        <nav class="navbar">
-            <a href="damduchuy.github.io" style="text-decoration: none; color: white"><option>Home</option></a>
-            <a href="nativegames" style="text-decoration: none; color: white"><option>Native Games</option></a>
-            <a href="mine" style="text-decoration: none; color: white"><option>Mine</option></a>
-            <a href="contact" style="text-decoration: none; color: white"><option>Contact</option></a>
-        </nav>
+    <body>
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <img class="logotext" src="icons/logotext.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="damduchuy.github.io">Home</a>
+                        </li>
+                        <li>
+                            <a href="nativegames">Native games</a>
+                        </li>
+                        <li>
+                            <a href="mine">Mine</a>
+                        </li>
+                        <li>
+                            <a href="contact" class="active">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="login-signup">
+                    <a href="">Donate</a>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
     </body>
     <main>
     <div class="form-group">

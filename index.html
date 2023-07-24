@@ -9,8 +9,8 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Damduchuy's website uwu</title>
-    <link rel="icon" href="icons/icon.png" type="image/png">
+    <title>DADUDUH - Entertainment Purposes Only</title>
+    <link rel="icon" href="icons/logo.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,13 +35,47 @@
     <amp-auto-ads type="adsense"
             data-ad-client="ca-pub-1844995367807772">
     </amp-auto-ads>
-    <body style="margin: 0; padding: 0;">
-        <nav class="navbar">
-            <a href="damduchuy.github.io" style="text-decoration: none; color: white"><option>Home</option></a>
-            <a href="nativegames" style="text-decoration: none; color: white"><option>Native Games</option></a>
-            <a href="mine" style="text-decoration: none; color: white"><option>Mine</option></a>
-	        <a href="contact" style="text-decoration: none; color: white"><option>Contact</option></a>
-        </nav>
+    <body>
+        <header>
+            <div class="header-left">
+                <div class="logo">
+                    <img class="logotext" src="icons/logotext.png" alt="">
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="damduchuy.github.io" class="active">Home</a>
+                        </li>
+                        <li>
+                            <a href="nativegames">Native games</a>
+                        </li>
+                        <li>
+                            <a href="mine">Mine</a>
+                        </li>
+                        <li>
+                            <a href="contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="login-signup">
+                    <a href="">Donate</a>
+                </div>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            nav = document.querySelector("nav");
+            hamburger.onclick = function() {
+                nav.classList.toggle("active");
+            }
+        </script>
     </body>
     <button class="my_bttn"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
     <main>

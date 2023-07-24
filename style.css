@@ -55,27 +55,6 @@ margin: 0;
 padding: 0;
 }
 
-.navbar {
-display: flex;
-width: 100%;
-background-color: #252525;
-font-family: 'ourland';
-}
-        
-
-.navbar option {
-text-transform: uppercase;
-flex: 1;
-padding: 20px;
-text-align: center;
-background-color: #252525;
-cursor: pointer;
-}
-        
-.navbar option:hover {
-background-color: #363636;
-}
-
 main {
 border-radius: 5px;
 margin: 50px auto;

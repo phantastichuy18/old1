@@ -58,6 +58,7 @@ font-family: 'ourland';
         
 
 .navbar option {
+text-transform: uppercase;
 flex: 1;
 padding: 20px;
 text-align: center;

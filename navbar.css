@@ -8,9 +8,6 @@
 .logotext {
     width: 100%;
 }
-.logotext:hover {
-    transform: rotate(360deg);
-}
 header {
     height: 70px;
     display: flex;

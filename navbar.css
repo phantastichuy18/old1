@@ -7,7 +7,6 @@
 }
 .logotext {
     width: 100%;
-    user-select: none;
 }
 .logotext:hover {
     transform: rotate(360deg);

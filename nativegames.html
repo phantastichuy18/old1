@@ -19,60 +19,71 @@
     <script src="topbutton.js"></script>
     <link rel="stylesheet" href="navbar.css">
     <style>
-    main {
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    max-width: 1000px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    text-align: justify;
-    }
-    .image-row {
-        display: flex;
-        justify-content: center;
-    }
-
-    .image {
-        margin: 5px;
-    }
-    .geeks {
-        margin-right: 6px;
-    }
-	.geeks img {
-		transition: 0.2s all ease-in-out;
-	}
-	
-	.geeks:hover img {
-		transform: scale(1.3);
-        box-shadow: 3px 3px 1px #1a1a1a
-	}
-    h1 {
-        font-family: 'ourland';
-        font-size: 26px;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-    body {
-        background-image: url("party.jpg");
-    }
-    .submit-games {
-        font-family: 'square';
-        padding: 20px;
-        float: right;
-        color: #1475cf;
-        background-color: none;
-        border-style: solid;
-        border-color: #1475cf;
-        border-radius: 25px;
-	transition:all 0.5s;
-    }
-    .submit-games:hover {
-        color: #ffffff;
-        background-color: #1475cf;
-        border-color: none;
-        cursor: pointer;
-    }
+        main {
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            max-width: 1000px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: justify;
+        }
+        .geeks {
+            margin-right: 6px;
+        }
+        .geeks img {
+            transition: 0.2s all ease-in-out;
+        }
+        
+        .geeks:hover img {
+            transform: scale(1.3);
+            box-shadow: 3px 3px 1px #1a1a1a
+        }
+        h1 {
+            font-family: 'ourland';
+            font-size: 26px;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: url("party.jpg");
+        }
+        .submit-games {
+            font-family: 'square';
+            padding: 20px;
+            float: right;
+            color: #1475cf;
+            background-color: none;
+            border-style: solid;
+            border-color: #1475cf;
+            border-radius: 25px;
+            transition:all 0.5s;
+        }
+        .submit-games:hover {
+            color: #ffffff;
+            background-color: #1475cf;
+            border-color: none;
+            cursor: pointer;
+        }
+        .search-bar {
+            width: 200px;
+            float: right;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            font-family: 'vanilla';
+        }
+        .search-results {
+            margin-top: 10px;
+            color : white;
+            list-style: none;
+        }
+        .search-results li {
+            display: inline-block;
+            height: 1px;
+        }
     </style>
 </head>
 <body>
@@ -135,67 +146,81 @@
     If there are any bugs, please report them!
     <h1>hmmm...</h1>
     <br>
-    <div class="image-row">
-	<a class="geeks" href="nativegames/eaglercraft1.5.2"><img src="nativegames/gamewindow/icons/eagler.png" width="120" ></a>
-	<a class="geeks" href="nativegames/elasticman"><img src="nativegames/gamewindow/icons/elasticman.png" width="120" ></a>
-	<a class="geeks" href="nativegames/flappybird"><img src="nativegames/gamewindow/icons/flappybird.png" width="120" ></a>
-	<a class="geeks" href="nativegames/baldi"><img src="nativegames/gamewindow/icons/baldi.png" width="120" ></a> 
-	<a class="geeks" href="nativegames/superfighters"><img src="nativegames/gamewindow/icons/superfighters.png" width="120" ></a>
-	<a class="geeks" href="nativegames/getaway-shootout"><img src="nativegames/gamewindow/icons/getaway-shootout.png" width="120" ></a>
-	<a class="geeks" href="nativegames/gun-mayhem-2-more-mayhem"><img src="nativegames/gamewindow/icons/gun-mayhem-2-more-mayhem.png" width="120" ></a>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search...">
     </div>
-    <div class="image-row">
-	<a class="geeks" href="nativegames/fire-water-forest-temple"><img src="nativegames/gamewindow/icons/fire-water-forest-temple.png" width="120" ></a>
-	<a class="geeks" href="nativegames/wrassling"><img src="nativegames/gamewindow/icons/wrassling.png" width="120" ></a>
-	<a class="geeks" href="nativegames/chromedino"><img src="nativegames/gamewindow/icons/chromedino.png" width="120" ></a>
-	<a class="geeks" href="nativegames/hackertyper"><img src="nativegames/gamewindow/icons/hackertyper.png" width="120" ></a>
-	<a class="geeks" href="nativegames/evowars"><img src="nativegames/gamewindow/icons/evowars.png" width="120" ></a>
-	<a class="geeks" href="nativegames/pacman"><img src="nativegames/gamewindow/icons/pacman.png" width="120" ></a>
-	<a class="geeks" href="nativegames/football-legends-2016"><img src="nativegames/gamewindow/icons/football-legends-2016.png" width="120" ></a>
+    <br><br><br>
+    <div class="search-results">
+        <ul id="employee-list">
+                <li><a class="geeks" href="nativegames/eaglercraft1.5.2"><img src="nativegames/gamewindow/icons/eagler.png" width="120" alt="eaglercraft1.5.2"></a></li>
+                <li><a class="geeks" href="nativegames/elasticman"><img src="nativegames/gamewindow/icons/elasticman.png" width="120" alt="elasticman"></a></li>
+                <li><a class="geeks" href="nativegames/flappybird"><img src="nativegames/gamewindow/icons/flappybird.png" width="120" alt="flappybird"></a></li>
+                <li><a class="geeks" href="nativegames/baldi"><img src="nativegames/gamewindow/icons/baldi.png" width="120" alt="baldi'sbasic"></a> </li>
+                <li><a class="geeks" href="nativegames/superfighters"><img src="nativegames/gamewindow/icons/superfighters.png" width="120" alt="superfighters"></a></li>
+                <li><a class="geeks" href="nativegames/getaway-shootout"><img src="nativegames/gamewindow/icons/getaway-shootout.png" width="120" alt="getawayshootout"></a></li>
+                <li><a class="geeks" href="nativegames/gun-mayhem-2-more-mayhem"><img src="nativegames/gamewindow/icons/gun-mayhem-2-more-mayhem.png" width="120" alt="gunmayhem2moremayhem"></a></li>
+                <li><a class="geeks" href="nativegames/fire-water-forest-temple"><img src="nativegames/gamewindow/icons/fire-water-forest-temple.png" width="120" alt="firewaterforesttemple"></a></li>
+                <li><a class="geeks" href="nativegames/wrassling"><img src="nativegames/gamewindow/icons/wrassling.png" width="120" alt="wrassling"></a></li>
+                <li><a class="geeks" href="nativegames/chromedino"><img src="nativegames/gamewindow/icons/chromedino.png" width="120" alt="chromedino"></a></li>
+                <li><a class="geeks" href="nativegames/hackertyper"><img src="nativegames/gamewindow/icons/hackertyper.png" width="120" alt="hackertyper"></a></li>
+                <li><a class="geeks" href="nativegames/evowars"><img src="nativegames/gamewindow/icons/evowars.png" width="120" alt="evowarsio"></a></li>
+                <li><a class="geeks" href="nativegames/pacman"><img src="nativegames/gamewindow/icons/pacman.png" width="120" alt="pacman"></a></li>
+                <li><a class="geeks" href="nativegames/football-legends-2016"><img src="nativegames/gamewindow/icons/football-legends-2016.png" width="120" alt="footballlegends2016"></a></li>
+                <li><a class="geeks" href="nativegames/volley-random"><img src="nativegames/gamewindow/icons/volley-random.png" width="120" alt="volleyrandom"></a></li>
+                <li><a class="geeks" href="nativegames/subway-surfers"><img src="nativegames/gamewindow/icons/subway-surfers.png" width="120" alt="subwaysurfers"></a></li>
+                <li><a class="geeks" href="nativegames/boxing-random"><img src="nativegames/gamewindow/icons/boxing-random.png" width="120" alt="boxingrandom"></a></li>
+                <li><a class="geeks" href="mine/click"><img src="nativegames/gamewindow/icons/click.png" width="120" alt="justclick"></a></li>
+                <li><a class="geeks" href="nativegames/chess"><img src="nativegames/gamewindow/icons/chess.png" width="120" alt="chess"></a></li>
+                <li><a class="geeks" href="nativegames/thwack"><img src="nativegames/gamewindow/icons/thwack.png" width="120" alt="thwack"></a></li>
+                <li><a class="geeks" href="nativegames/george-and-the-printer"><img src="nativegames/gamewindow/icons/george-and-the-printer.png" width="120" alt="georgeandtheprinter"></a></li>
+                <li><a class="geeks" href="nativegames/dreader"><img src="nativegames/gamewindow/icons/dreader.png" width="120" alt="dreader"></a></li>
+                <li><a class="geeks" href="nativegames/handshakes"><img src="nativegames/gamewindow/icons/handshakes.png" width="120" alt="handshakes"></a></li>
+                <li><a class="geeks" href="nativegames/sandtrix"><img src="nativegames/gamewindow/icons/sandtrix.png" width="120" alt="sandtrix"></a></li>
+                <li><a class="geeks" href="nativegames/friday-night-funkin"><img src="nativegames/gamewindow/icons/fnf.png" width="120" alt="fnffridaynightfunkin"></a></li>
+                <li><a class="geeks" href="nativegames/red-handed"><img src="nativegames/gamewindow/icons/red-handed.png" width="120" alt="redhanded"></a></li>
+                <li><a class="geeks" href="nativegames/klifur"><img src="nativegames/gamewindow/icons/klifur.png" width="120" alt="klifur"></a></li>
+                <li><a class="geeks" href="nativegames/cannon"><img src="nativegames/gamewindow/icons/cannon.png" width="120" alt="cannon"></a></li>
+                <li><a class="geeks" href="nativegames/pikwip"><img src="nativegames/gamewindow/icons/pikwip.png" width="120" alt="pikwip"></a></li>
+                <li><a class="geeks" href="nativegames/lurkersio"><img src="nativegames/gamewindow/icons/lurkersio.png" width="120" alt="lurkersio"></a></li>
+                <li><a class="geeks" href="nativegames/touhou-luminous-strike"><img src="nativegames/gamewindow/icons/touhou-luminous-strike.png" width="120" alt="touhouluminousstrike"></a></li>
+                <li><a class="geeks" href="nativegames/wordward-draw"><img src="nativegames/gamewindow/icons/wordward-draw.png" width="120" alt="wordward-draw"></a></li>
+                <li><a class="geeks" href="nativegames/eelbay"><img src="nativegames/gamewindow/icons/eelbay.png" width="120" alt="eelbay"></a></li>
+                <li><a class="geeks" href="nativegames/we-become-what-we-behold"><img src="nativegames/gamewindow/icons/we-become-what-we-behold.png" width="120" alt="webecomewhatwebehold"></a></li>
+                <li><a class="geeks" href="nativegames/push-the-button"><img src="nativegames/gamewindow/icons/push-the-button.png" width="120" alt="pushthebutton"></a></li>
+                <li><a class="geeks" href="nativegames/jimi-can-not-read"><img src="nativegames/gamewindow/icons/jimi-can-not-read.png" width="120" alt="jimicannotread"></a></li>
+                <li><a class="geeks" href="nativegames/n-step-steve-part-1"><img src="nativegames/gamewindow/icons/n-step-steve-part-1.png" width="120" alt="nstepstevepart1"></a></li>
+                <li><a class="geeks" href="nativegames/timeline"><img src="nativegames/gamewindow/icons/timeline.png" width="120" alt="timeline"></a></li>
+                <li><a class="geeks" href="nativegames/jerry-is-not-invited"><img src="nativegames/gamewindow/icons/jerry-is-not-invited.png" width="120" alt="jerryisnotinvited"></a></li>
+                <li><a class="geeks" href="nativegames/new-super-mario-bros"><img src="nativegames/gamewindow/icons/new-super-mario-bros.png" width="120" alt="newsupermariobros"></a></li>
+                <li><a class="geeks" href="nativegames/only-humans"><img src="nativegames/gamewindow/icons/only-humans.png" width="120" alt="onlyhumans"></a></li>
+                <li><a class="geeks" href="nativegames/bleach-vs-naruto"><img src="nativegames/gamewindow/icons/bleach-vs-naruto.png" width="120" alt="bleachvsnaruto"></a></li>
+                <li><a class="geeks" href="nativegames/gold-miner"><img src="nativegames/gamewindow/icons/gold-miner.png" width="120" alt="goldminer"></a></li>
+                <li><a class="geeks" href="nativegames/bomb-it-6"><img src="nativegames/gamewindow/icons/bomb-it-6.png" width="120" alt="bombit6"></a></li>
+                <li><a class="geeks" href="nativegames/age-of-war"><img src="nativegames/gamewindow/icons/age-of-war.png" width="120" alt="ageofwar"></a></li>
+                <li><a class="geeks" href="nativegames/basket-random"><img src="nativegames/gamewindow/icons/basket-random.png" width="120" alt="basketrandom"></a></li>
+                <li><a class="geeks" href="nativegames/the-tale-of-the-adhd-dinosaur"><img src="nativegames/gamewindow/icons/the-tale-of-the-adhd-dinosaur.png" width="120" alt="thetaleoftheadhddinosaur"></a></li>
+        </ul>
     </div>
-    	<div class="image-row">
-		<a class="geeks" href="nativegames/volley-random"><img src="nativegames/gamewindow/icons/volley-random.png" width="120" ></a>
-		<a class="geeks" href="nativegames/subway-surfers"><img src="nativegames/gamewindow/icons/subway-surfers.png" width="120" ></a>
-		<a class="geeks" href="nativegames/boxing-random"><img src="nativegames/gamewindow/icons/boxing-random.png" width="120" ></a>
-	    	<a class="geeks" href="mine/click"><img src="nativegames/gamewindow/icons/click.png" width="120" ></a>
-		<a class="geeks" href="nativegames/chess"><img src="nativegames/gamewindow/icons/chess.png" width="120" ></a>
-		<a class="geeks" href="nativegames/thwack"><img src="nativegames/gamewindow/icons/thwack.png" width="120" ></a>
-		<a class="geeks" href="nativegames/george-and-the-printer"><img src="nativegames/gamewindow/icons/george-and-the-printer.png" width="120" ></a>
-	</div>
-	<div class="image-row">
-		<a class="geeks" href="nativegames/dreader"><img src="nativegames/gamewindow/icons/dreader.png" width="120" ></a>
-		<a class="geeks" href="nativegames/handshakes"><img src="nativegames/gamewindow/icons/handshakes.png" width="120" ></a>
-		<a class="geeks" href="nativegames/sandtrix"><img src="nativegames/gamewindow/icons/sandtrix.png" width="120" ></a>
-		<a class="geeks" href="nativegames/friday-night-funkin"><img src="nativegames/gamewindow/icons/fnf.png" width="120" ></a>
-		<a class="geeks" href="nativegames/red-handed"><img src="nativegames/gamewindow/icons/red-handed.png" width="120" ></a>
-		<a class="geeks" href="nativegames/klifur"><img src="nativegames/gamewindow/icons/klifur.png" width="120" ></a>
-		<a class="geeks" href="nativegames/cannon"><img src="nativegames/gamewindow/icons/cannon.png" width="120" ></a>
-	</div>
-	<div class="image-row">
-		<a class="geeks" href="nativegames/pikwip"><img src="nativegames/gamewindow/icons/pikwip.png" width="120" ></a>
-		<a class="geeks" href="nativegames/lurkersio"><img src="nativegames/gamewindow/icons/lurkersio.png" width="120" ></a>
-		<a class="geeks" href="nativegames/touhou-luminous-strike"><img src="nativegames/gamewindow/icons/touhou-luminous-strike.png" width="120" ></a>
-		<a class="geeks" href="nativegames/wordward-draw"><img src="nativegames/gamewindow/icons/wordward-draw.png" width="120" ></a>
-		<a class="geeks" href="nativegames/eelbay"><img src="nativegames/gamewindow/icons/eelbay.png" width="120" ></a>
-		<a class="geeks" href="nativegames/we-become-what-we-behold"><img src="nativegames/gamewindow/icons/we-become-what-we-behold.png" width="120" ></a>
-		<a class="geeks" href="nativegames/push-the-button"><img src="nativegames/gamewindow/icons/push-the-button.png" width="120" ></a>
-	</div>
-	<div class="image-row">
-		<a class="geeks" href="nativegames/jimi-can-not-read"><img src="nativegames/gamewindow/icons/jimi-can-not-read.png" width="120" ></a>
-		<a class="geeks" href="nativegames/n-step-steve-part-1"><img src="nativegames/gamewindow/icons/n-step-steve-part-1.png" width="120" ></a>
-		<a class="geeks" href="nativegames/timeline"><img src="nativegames/gamewindow/icons/timeline.png" width="120" ></a>
-		<a class="geeks" href="nativegames/jerry-is-not-invited"><img src="nativegames/gamewindow/icons/jerry-is-not-invited.png" width="120" ></a>
-		<a class="geeks" href="nativegames/new-super-mario-bros"><img src="nativegames/gamewindow/icons/new-super-mario-bros.png" width="120" ></a>
-		<a class="geeks" href="nativegames/only-humans"><img src="nativegames/gamewindow/icons/only-humans.png" width="120" ></a>
-		<a class="geeks" href="nativegames/bleach-vs-naruto"><img src="nativegames/gamewindow/icons/bleach-vs-naruto.png" width="120" ></a>
-	</div>
-	<div class="image-row">
-		<a class="geeks" href="nativegames/gold-miner"><img src="nativegames/gamewindow/icons/gold-miner.png" width="120" ></a>
-		<a class="geeks" href="nativegames/bomb-it-6"><img src="nativegames/gamewindow/icons/bomb-it-6.png" width="120" ></a>
-		<a class="geeks" href="nativegames/age-of-war"><img src="nativegames/gamewindow/icons/age-of-war.png" width="120" ></a>
-		<a class="geeks" href="nativegames/basket-random"><img src="nativegames/gamewindow/icons/basket-random.png" width="120" ></a>
-		<a class="geeks" href="nativegames/the-tale-of-the-adhd-dinosaur"><img src="nativegames/gamewindow/icons/the-tale-of-the-adhd-dinosaur.png" width="120" ></a>
-	</div>
+    <script>
+        // JavaScript cho thanh tìm kiếm
+        const searchInput = document.getElementById('search-input');
+        const employeeList = document.getElementById('employee-list').getElementsByTagName('li');
+
+        // Đặt sự kiện "input" cho thanh tìm kiếm
+        searchInput.addEventListener('input', function () {
+            const searchValue = searchInput.value.toUpperCase();
+
+            // Lặp qua danh sách nhân viên và ẩn/hiện theo từ khóa tìm kiếm
+            for (let i = 0; i < employeeList.length; i++) {
+                const employeeName = employeeList[i].innerHTML.toUpperCase();
+                if (employeeName.indexOf(searchValue) > -1) {
+                    employeeList[i].style.display = '';
+                } else {
+                    employeeList[i].style.display = 'none';
+                }
+            }
+        });
+    </script>
 	<br>
     <br>
     <br>

@@ -5,6 +5,13 @@
     align-items: center;
 }
 
+.container2 {
+    color:aliceblue;
+    background-color: #313131;
+    display: flex;
+    align-items: center;
+}
+
 .content {
     width: 45%;
     padding: 20px;

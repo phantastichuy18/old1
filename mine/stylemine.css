@@ -11,20 +11,12 @@ font-family: 'minecraft';
 src: url('fonts/minecraft.ttf') format('truetype');
 }
 @font-face {
-font-family: 'pixellari';
-src: url('fonts/pixellari.ttf') format('truetype');
-}
-@font-face {
 font-family: 'helpme';
 src: url('fonts/helpme.ttf') format('truetype');
 }
 @font-face {
 font-family: 'graffiti';
 src: url('fonts/graffiti.otf') format('truetype');
-}
-@font-face {
-font-family: 'spongebob';
-src: url('fonts/spongebob.ttf') format('truetype');
 }
 @font-face {
 font-family: 'square';

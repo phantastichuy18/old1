@@ -19,8 +19,8 @@ font-family: 'helpme';
 src: url('fonts/helpme.ttf') format('truetype');
 }
 @font-face {
-font-family: 'graffiti';
-src: url('fonts/graffiti.otf') format('truetype');
+font-family: 'spongebob';
+src: url('fonts/spongebob.ttf') format('truetype');
 }
 @font-face {
 font-family: 'square';

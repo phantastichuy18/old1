@@ -30,7 +30,7 @@
     height: auto;
     object-fit: contain;
     margin: 50px;
-    border-radius: 14.5px;
+    border-radius: 12.5px;
 }
 
 @media (max-width: 768px) {

@@ -6,24 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /* font-family: 'Anton', sans-serif; */
 @font-face {
-font-family: 'novamono';
-src: url('fonts/novamono.ttf') format('truetype');
-}
-@font-face {
-font-family: 'graphik';
-src: url('fonts/graphik.otf') format('truetype');
-}
-@font-face {
 font-family: 'supermario';
 src: url('fonts/supermario.ttf') format('truetype');
-}
-@font-face {
-font-family: 'minecraft';
-src: url('fonts/minecraft.ttf') format('truetype');
-}
-@font-face {
-font-family: 'helpme';
-src: url('fonts/helpme.ttf') format('truetype');
 }
 @font-face {
 font-family: 'spongebob';
@@ -37,11 +21,6 @@ src: url('fonts/square.ttf') format('truetype');
 font-family: 'ourland';
 src: url('fonts/ourland.ttf') format('truetype');
 font-weight: bold;
-}
-@font-face {
-font-family: 'vanilla';
-src: url('fonts/vanilla.otf') format('truetype');
-font-weight: normal;
 }
 * {
 padding: 0;

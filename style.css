@@ -1,3 +1,7 @@
+* {
+    font-family: 'Barlow', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
 @font-face {
 font-family: 'novamono';
 src: url('fonts/novamono.ttf') format('truetype');

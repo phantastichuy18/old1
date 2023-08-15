@@ -84,18 +84,12 @@ margin: 10px 0;
 
 .about-me {
 display: flex;
-/* justify-content: center;
-align-items: center; */
-justify-content: left;
-align-items: left;
+justify-content: center;
+align-items: center;
 padding: 40px 80px;
 }
 
 .about-me img {
-  
-justify-content: right;
-align-items: right;
-
 width: 500px;
 max-width: 100%;
 height: auto;

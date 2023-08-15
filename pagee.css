@@ -92,6 +92,10 @@ padding: 40px 80px;
 }
 
 .about-me img {
+  
+justify-content: right;
+align-items: right;
+
 width: 500px;
 max-width: 100%;
 height: auto;

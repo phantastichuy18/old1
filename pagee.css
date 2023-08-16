@@ -84,6 +84,7 @@ margin: 10px 0;
 
 .about-me {
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 40px 80px;
@@ -96,16 +97,25 @@ height: auto;
 border-radius: 10px;
 }
 
-.about-me-text h2 {
-font-family: 'Anton', sans-serif;
-font-size: 30px;
-color: #333333;
-text-transform: uppercase;
-margin: 0;
+.about-me-text {
+text-align: center;
+margin-top: 20px;
 }
 
-.about-me-text p {
-font-size: 15px;
-color: #585858;
-margin: 10px 0;
+@media (min-width: 768px) {
+.about-me {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-me img {
+    order: 2;
+    margin-left: 20px;
+}
+
+.about-me-text {
+    order: 1;
+    margin-right: 20px;
+}
 }

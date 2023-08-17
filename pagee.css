@@ -82,6 +82,12 @@ color: #585858;
 margin: 10px 0;
 }
 
+@media (max-width: 768px) {
+.achievements {
+flex-direction: column;
+}
+}
+
 .about-me {
 display: flex;
 flex-direction: column;

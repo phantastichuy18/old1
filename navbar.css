@@ -83,7 +83,7 @@ header .header-right .hamburger div {
         left: 0;
         width: 100%;
         height: fit-content;
-        background-color: linear-gradient(to right, #2c3352, #123849);
+        background-color: #123849d9;
         padding: 30px;
         transition: 0.3s;
         text-align: center;

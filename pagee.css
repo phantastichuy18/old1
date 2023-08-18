@@ -109,7 +109,7 @@ text-align: left;
 margin-top: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 .about-me {
     flex-direction: row;
     justify-content: space-between;

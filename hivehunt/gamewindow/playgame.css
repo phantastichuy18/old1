@@ -1,0 +1,34 @@
+body {
+    background-color: rgba(0,0,0,.075);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#playButton {
+    display: block;
+    padding: 10px;
+    font-size: 24px;
+    border-style: solid;
+    color: white;
+    border-radius: 0px;
+    font-weight: bold;
+    border-color: none;
+    background-color: #eb4f42;
+    border-color: #eb4f42;
+    transition: all 0.5s;
+}
+#playButton:hover {
+    cursor: pointer;
+}
+#myframe {
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: none;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pacman | damduchuy.github.io</title>
+    <link rel="icon" href="icons/pacman.png" type="image/png">
+    <link rel="stylesheet" href="playgame.css">
+</head>
+<body id="my-element" style="overflow: hidden;">
+    <div class="center">
+        <button id="playButton" onclick="playVideo()">Run game</button>
+        <iframe id="myframe" src=""></iframe>
+    </div>
+
+    <script>
+        function playVideo() {
+        document.getElementById("playButton").style.display = "none";
+        document.getElementById("myframe").src = "https://pacman.cc/game/";
+        document.getElementById("myframe").style.display = "block";
+        }
+    </script>
+</body>
+</html>

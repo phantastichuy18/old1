@@ -1,0 +1,17 @@
+<!DOCTYPE html><html> <head> <script src="https://files.crazygames.com/gameframe/ruffle/2023-08-04/ruffle.js"></script><body style="margin: 0px"><div id="container" style="width: 100vw; height: 100vh;"></div><script type="text/javascript">function play() {
+    const ruffleDebug = window.location.search.includes('ruffle_debug=true');
+    const ruffle = window.RufflePlayer.newest();
+    const player = ruffle.createPlayer();
+    player.config = { 
+        contextMenu: false,
+        autoplay: true,
+        warnOnUnsupportedContent: ruffleDebug,
+        allowScriptAccess: true,
+    };
+    const container = document.getElementById('container');
+    container.appendChild(player);
+    player.style.cssText = 'width:100%; height: 100%;';
+    player.style.display = 'block';
+    player.load("https://files.crazygames.com/gunmayhem2.swf");
+}
+play();</script></body></head></html>

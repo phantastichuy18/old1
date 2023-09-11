@@ -26,7 +26,6 @@ font-weight: bold;
 padding: 0;
 margin: 0;
 }
-
 body {
 font-family: 'Roboto', sans-serif;
 font-size: 16px;
@@ -37,32 +36,26 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 }
-
-
 /* Định dạng các thẻ tiêu đề (h1-h6) */
 h1, h2, h3, h4, h5, h6 {
 font-family: 'Roboto', sans-serif;
 font-weight: bold;
 color: black;
 }
-
 h1, h2 {
 font-family: 'Anton', sans-serif;
 font-weight: bold;
 color: black;
 }
-
 h1 {
 font-size: 32px;
 margin-bottom: 20px;
 margin-top: 10px;
 }
-
 h2 {
 font-size: 28px;
 margin-bottom: 20px;
 }
-
 h3 {
 font-size: 24px;
 margin-bottom: 15px;
@@ -72,12 +65,10 @@ h4 {
 font-size: 20px;
 margin-bottom: 15px;
 }
-
 h5 {
 font-size: 18px;
 margin-bottom: 10px;
 }
-
 h6 {
 font-size: 16px;
 margin-bottom: 10px;
@@ -89,8 +80,7 @@ line-height: 1.5;
 color: black;
 margin-bottom: 10px;
 }
-
-
 a {
 color: #51999F;
+font-weight: bold;
 }
